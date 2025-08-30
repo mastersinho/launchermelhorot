@@ -23,7 +23,7 @@ NOTE: Set it to "false" or only "" to not use the client folder, so everything w
 			"name": "bin"
 		}
 	],
-	"clientFolder": "melhorot",
+	"clientFolder": "Tibia",
 	"newClientUrl" : "https://github.com/mastersinho/clientmelhorot/releases/download/clientmelhorot/clientmelhorot.zip",
 	"clientExecutable": "client.exe"
 }

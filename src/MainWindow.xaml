@@ -205,7 +205,7 @@
 					FontFamily="Verdana"
 					FontSize="12"
 					FontWeight="Bold"
-					Foreground="#909090">Genesis</TextBlock>
+					Foreground="#909090">Melhor OT</TextBlock>
 				<Grid
 					Grid.Row="1"
 					Margin="10, 3, 10, 3">
@@ -226,9 +226,10 @@
 						Margin="5, 0, 0, 0"
 						Foreground="#bfbfbf"
 						FontFamily="Verdana"
-						FontSize="12">A new goddess stepped out of the void like a new-born mermaid from<LineBreak/> her shell.
-						The amazed elder gods watched her divine beauty in awed<LineBreak/> admiration,
-						for everything in her was perfect harmony. They agreed<LineBreak/> to call her Tibiasula.</TextBlock>
+						FontSize="12">Um servidor com bot 100% liberado!<LineBreak/>
+						Conteúdo completamente customizado.<LineBreak/>
+						Magias, Hunts, Outfits, Bosses e Monstros novos.<LineBreak/>
+						Aqui a sua diversão é garantida!<LineBreak/></TextBlock>
 				</Grid>
 
 			</Grid>
