@@ -1,6 +1,7 @@
 obj
 .vs
 *.user
+*.rar
 
 # Build results
 Properties/
