@@ -223,7 +223,8 @@ namespace MelhorOTLauncherUpdate
 			await Task.Run(() =>
 			{
 				Directory.CreateDirectory(GetLauncherPath());
-				ExtractZip(GetLauncherPath() + "/melhorot.zip", ExtractExistingFileAction.OverwriteSilently);
+				ExtractZip(GetLauncherPath() + "/melhorot.zip", ExtractExistingFileAction.DoNotOverwrite);
+				// SUBSTITUIDO ExtractZip(GetLauncherPath() + "/melhorot.zip", ExtractExistingFileAction.OverwriteSilently);
 				File.Delete(GetLauncherPath() + "/melhorot.zip");
 			});
 			progressbarDownload.Value = 100;
@@ -250,7 +251,7 @@ namespace MelhorOTLauncherUpdate
 		{
 			progressbarDownload.Value = e.ProgressPercentage;
 			if (progressbarDownload.Value == 100) {
-				labelDownloadPercent.Content = "Finishing, wait...";
+				labelDownloadPercent.Content = "Finalizando ajustes, aguarde, pois pode demorar um pouco.";
 			} else {
 				labelDownloadPercent.Content = SizeSuffix(e.BytesReceived) + " / " + SizeSuffix(e.TotalBytesToReceive);
 			}
