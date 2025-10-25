@@ -18,7 +18,7 @@ namespace MelhorOTLauncherUpdate
 {
 	public partial class SplashScreen : Window
 	{
-		static string launcerConfigUrl = "https://raw.githubusercontent.com/mastersinho/clientmelhorot/main/launcher_config.json";
+		static string launcerConfigUrl = "https://melhorot.com.br/launcher.json";
 		// Load informations of launcher_config.json file
 		static ClientConfig clientConfig = ClientConfig.loadFromFile(launcerConfigUrl);
 

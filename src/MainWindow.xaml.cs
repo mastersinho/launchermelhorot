@@ -20,7 +20,7 @@ namespace MelhorOTLauncherUpdate
 {
 	public partial class MainWindow : Window
 	{
-		static string launcerConfigUrl = "https://raw.githubusercontent.com/mastersinho/clientmelhorot/main/launcher_config.json";
+		static string launcerConfigUrl = "https://melhorot.com.br/launcher.json";
 		// Load informations of launcher_config.json file
 		static ClientConfig clientConfig = ClientConfig.loadFromFile(launcerConfigUrl);
 
@@ -223,8 +223,7 @@ namespace MelhorOTLauncherUpdate
 			await Task.Run(() =>
 			{
 				Directory.CreateDirectory(GetLauncherPath());
-				ExtractZip(GetLauncherPath() + "/melhorot.zip", ExtractExistingFileAction.DoNotOverwrite);
-				// SUBSTITUIDO ExtractZip(GetLauncherPath() + "/melhorot.zip", ExtractExistingFileAction.OverwriteSilently);
+				ExtractZip(GetLauncherPath() + "/melhorot.zip", ExtractExistingFileAction.OverwriteSilently);
 				File.Delete(GetLauncherPath() + "/melhorot.zip");
 			});
 			progressbarDownload.Value = 100;
